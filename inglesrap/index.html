@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inglês Rápido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="background-image"></div>
+
+    <div class="nav-glass">
+      <div class="logo">
+        
+        Inglês Rápido
+      </div>
+
+      
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#inscrevase">Inscreva-se</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+   
+  <section class="hero" id="inicio">
+    <div class="container" >
+      <h2>Aprenda Inglês em 3 Meses!</h2>
+      <p>Curso intensivo com foco em conversação para iniciantes e intermediários.</p>
+      <a href="#inscricao" class="btn">Quero me inscrever</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre" id="sobre">
+    <div class="container">
+      <h2>Por que escolher o Inglês Rápido?</h2>
+      <ul>
+        <li>✅ Método comprovado por mais de 5 mil alunos</li>
+        <li>✅ Aulas ao vivo + conteúdo gravado</li>
+        <li>✅ Suporte individual e plantão de dúvidas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="depoimentos" id="depoimentos">
+    <div class="container">
+      <h2>O que dizem nossos alunos</h2>
+      <blockquote>"Melhor curso que já fiz. Em 2 meses estava conversando com nativos!" – <strong>Fernanda M.</strong></blockquote>
+      <blockquote>"Didática simples, conteúdo direto ao ponto. Recomendo!" – <strong>Lucas T.</strong></blockquote>
+    </div>
+  </section>
+
+  <section id="inscricao" class="formulario">
+    <div class="container" id="inscrevase">
+      <h2>Inscreva-se Agora</h2>
+      <form action="enviar.php" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Por que deseja aprender inglês?" required></textarea>
+        <button type="submit">Enviar Inscrição</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Curso Inglês Rápido | contato@inglesrapido.com</p>
+    </div>
+  </footer><script src="script.js"></script>
+
+</body>
+</html>

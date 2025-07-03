@@ -1,0 +1,221 @@
+:root {
+  --bg-color: #111;
+  --text-color: #fff;
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --blur: blur(10px);
+  --hover-bg: rgba(255, 255, 255, 0.2);
+  --transition-speed: 0.4s;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://img.freepik.com/fotos-premium/o-conceito-de-relacoes-politicas-os-estados-unidos-eua-com-reino-unido-reino-unido_526955-371.jpg?w=1380');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.nav-glass {
+  position: relative;
+  z-index: 1;
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+
+
+/* Botão tema com ícone */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#theme-toggle:hover {
+  transform: rotate(15deg);
+}
+
+/* Botão menu mobile */
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+/* Menu */
+.nav-links {
+  width: 100%;
+  margin-top: 1rem;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transition: background 0.2s;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: var(--hover-bg);
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+    gap: 2rem;
+  }
+}
+
+/* Seção principal com animação */
+.content-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+body.light .content-section {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.content-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('img/ingles-bg.jpg') no-repeat center center/cover;
+  color: rgb(26, 22, 22);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero .btn {
+  background: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.sobre, .depoimentos, .formulario {
+  padding: 60px 20px;
+  background: rgb(224, 214, 214);
+  color: #111;
+}
+
+blockquote {
+  border-left: 5px solid #003366;
+  padding-left: 15px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Amigo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="background-image"></div>
+
+    <div class="nav-glass">
+      <div class="logo">
+        
+        Pet Amigo
+      </div>
+
+      
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+   
+  <section class="hero" id="inicio">
+  <div class="container">
+    <h2>Cuidando do seu pet com carinho e dedicação</h2>
+    <p>Banho, tosa, hospedagem e muito mais!</p>
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <div class="container">
+    <h2>Sobre Nós</h2>
+    <p>O Pet Amigo existe para oferecer amor, cuidado e atenção aos pets da sua família. Com uma equipe apaixonada e estrutura moderna, garantimos segurança e bem-estar para seu animal.</p>
+  </div>
+</section>
+
+<section id="servicos" class="servicos">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+      <div class="servico">
+        <img src="https://img.freepik.com/free-photo/side-view-woman-washing-dog_23-2149872943.jpg?t=st=1751471546~exp=1751475146~hmac=20865c095d068b0eccde6c1b8b3528ba373c5833b646b23a5ae72c6524dc697d&w=1380" alt="Banho">
+        <h3>Banho</h3>
+        <p>Banho higiênico com produtos de qualidade.</p>
+      </div>
+      <div class="servico">
+        <img src="https://img.freepik.com/free-photo/haircuting-process-small-dog-sits-table-dog-with-professional_1157-48819.jpg?t=st=1751471615~exp=1751475215~hmac=4d1ed7a7914fbb9c8f5802027b841b7281abad76fc0c8a8ee458eaca6b755521&w=1380" alt="Tosa">
+        <h3>Tosa</h3>
+        <p>Estilo, conforto e segurança na tosa do seu pet.</p>
+      </div>
+      <div class="servico">
+        <img src="https://img.freepik.com/premium-photo/dog-169_1121924-675.jpg?w=1380" alt="Hotelzinho">
+        <h3>Hotelzinho</h3>
+        <p>Hospedagem com monitoramento e muito carinho.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" class="galeria">
+  <div class="container">
+    <h2>Galeria</h2>
+    <div class="grid">
+      <img src="https://img.freepik.com/free-photo/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white_346278-1626.jpg?t=st=1751470114~exp=1751473714~hmac=ec4efd22cb4bc9773ae7db4fa6d2036805dde8df80ff361cb2f2ff448e2abca5&w=1380" alt="Pet 1">
+      <img src="https://img.freepik.com/premium-psd/scene-with-brown-white-dog_23-2150179189.jpg?w=1380" alt="Pet 2">
+      <img src="https://img.freepik.com/premium-photo/schnauzer-10-months_191971-1792.jpg?w=1380" alt="Pet 3">
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <form action="enviar.php" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Pet Amigo - Todos os direitos reservados</p>
+    </div>
+  </footer><script src="script.js"></script>
+
+</body>
+</html>
