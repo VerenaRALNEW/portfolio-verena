@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Verena RAL | Desenvolvedora Frontend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs\androgynous-avatar-ico.ico" type="image/ico" sizes="40x40">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Botões de idioma -->
+  <div id="lang-switch">
+    <button onclick="setLanguage('pt')">🇧🇷</button>
+    <button onclick="setLanguage('en')">🇺🇸</button>
+  </div>
+
+  <header>
+  <div class="header-container">
+    <img src="imgs\androgynous-avatar-non-binary-queer-person.png" alt="Avatar" class="avatar-flip">
+    <div class="header-text">
+      <h1>Verena <span>RAL</span></h1>
+      <p data-pt="Desenvolvedora Júnior" data-en="Junior Developer">
+        <span>Desenvolvedora</span> Júnior
+      </p>
+      <nav>
+        <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
+        <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+        <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <section id="sobre">
+    <h2 data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
+    <p data-pt="Sou uma desenvolvedora frontend focada em criar interfaces modernas e responsivas com HTML, CSS e JavaScript. Estou iniciando minha carreira e busco oportunidades para aplicar meus conhecimentos em projetos reais." 
+       data-en="I’m a frontend developer focused on building modern and responsive interfaces using HTML, CSS, and JavaScript. I'm starting my career and looking for opportunities to apply my knowledge in real-world projects.">
+      Sou uma desenvolvedora frontend focada em criar interfaces modernas e responsivas com HTML, CSS e JavaScript. Estou iniciando minha carreira e busco oportunidades para aplicar meus conhecimentos em projetos reais.
+    </p>
+  </section>
+
+  <section id="projetos">
+    <h2 data-pt="Projetos" data-en="Projects">Projetos</h2>
+    <div class="projetos">
+      <div class="projeto">
+        <img src="https://via.placeholder.com/300x180" alt="Projeto 1">
+        <h3 data-pt="Landing page - Curso de Inglês" data-en="Landing Page - English Course">Landing page - Curso de Inglês</h3>
+        <p data-pt="Landing page responsiva com HTML, CSS e formulário PHP funcional."
+           data-en="Responsive landing page using HTML, CSS and a working PHP form.">
+          Landing page responsiva com HTML, CSS e formulário PHP funcional.
+        </p>
+        <a href="#">🔗 Ver online</a> | <a href="#">📁 GitHub</a>
+      </div>
+      <div class="projeto">
+        <img src="https://via.placeholder.com/300x180" alt="Projeto 2">
+        <h3 data-pt="Site - Pet Shop Fictício" data-en="Website - Fictional Pet Shop">Site - Pet Shop Fictício</h3>
+        <p data-pt="Site institucional com seções de serviços, galeria e formulário de contato."
+           data-en="Business website with service sections, gallery, and contact form.">
+          Site institucional com seções de serviços, galeria e formulário de contato.
+        </p>
+        <a href="#">🔗 Ver online</a> | <a href="#">📁 GitHub</a>
+      </div>
+      <div class="projeto">
+        <img src="https://via.placeholder.com/300x180" alt="Projeto 3">
+        <h3 data-pt="Portfólio Simples" data-en="Simple Portfolio">Portfólio Simples</h3>
+        <p data-pt="Este próprio site de portfólio! Desenvolvido com HTML, CSS e JavaScript puro."
+           data-en="This very portfolio site! Built using HTML, CSS and vanilla JavaScript.">
+          Este próprio site de portfólio! Desenvolvido com HTML, CSS e JavaScript puro.
+        </p>
+        <a href="#">🔗 Ver online</a> | <a href="#">📁 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2 data-pt="Contato" data-en="Contact">Contato</h2>
+    <form method="POST" action="https://formsubmit.co/astanovidade@gmail.com">
+  <input type="text" name="nome" required placeholder="Seu nome">
+  <input type="email" name="email" required placeholder="Seu e-mail">
+  <textarea name="mensagem" required placeholder="Sua mensagem"></textarea>
+  <button type="submit">Enviar</button>
+</form>
+  </section>
+
+  <footer>
+    <p data-pt="© Verena RAL - 2025 | Desenvolvido com HTML, CSS e JS" 
+       data-en="© Verena RAL - 2025 | Built with HTML, CSS and JS">
+       © Verena <span> RAL</span> - 2025 | Desenvolvido com HTML, CSS e JS
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
